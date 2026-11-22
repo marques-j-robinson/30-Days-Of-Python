@@ -10,3 +10,9 @@ print(3%4)
 print(3/4)
 print(3**4)
 print(3//4)
+
+# Practice using Strings
+print('Marques')
+print('Robinson')
+print('United States')
+print('I am enjoying 30 days of python')
