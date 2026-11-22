@@ -83,3 +83,11 @@ print('Name\t\tAge\t\tCountry\t\tCity\nAsabeneh\t250\t\tFinland\t\tHelsinki')
 radius = 10
 area = 3.14 * radius ** 2
 print(f'The area of a circle with radius {radius} is {int(area)} meters square.')
+
+print(f'8 + 6 = {8+6}')
+print(f'8 - 6 = {8-6}')
+print(f'8 * 6 = {8*6}')
+print(f'8 / 6 = {8/6}')
+print(f'8 % 6 = {8%6}')
+print(f'8 // 6 = {8//6}')
+print(f'8 ** 6 = {8**6}')
