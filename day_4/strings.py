@@ -33,3 +33,6 @@ print('Coding For All'.split())
 print("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(', '))
 
 print("Coding For All"[0])
+
+s = "Coding For All"
+print(s[len(s)-1])
