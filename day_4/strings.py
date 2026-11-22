@@ -23,3 +23,5 @@ print(company.swapcase())
 print(company.partition(" ")[2])
 
 print(company.find("Coding") >= 0)
+
+print(company.replace('coding', 'Python'))
