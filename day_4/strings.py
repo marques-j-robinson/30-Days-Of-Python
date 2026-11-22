@@ -56,3 +56,6 @@ print(s.rfind('because'))
 
 s = s.replace('because because because ', '')
 print(s)
+
+s = 'You cannot end a sentence with because because because is a conjunction'
+print(s.find('because'))
