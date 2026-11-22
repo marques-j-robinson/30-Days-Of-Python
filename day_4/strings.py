@@ -72,3 +72,6 @@ print(s.strip())
 
 print('30DaysOfPython'.isidentifier())
 print('thirty_days_of_python'.isidentifier())
+
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print(" # ".join(libraries))
