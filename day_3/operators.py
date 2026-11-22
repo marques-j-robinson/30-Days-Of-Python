@@ -89,3 +89,5 @@ floor_division = 7//3
 print(floor_division == int(2.7))
 
 print('10' == 10)
+
+print(int(float('9.8')) == 10)
