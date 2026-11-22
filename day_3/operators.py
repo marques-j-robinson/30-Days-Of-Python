@@ -87,3 +87,5 @@ print(f'Is {n} odd? {n%2!=0}')
 
 floor_division = 7//3
 print(floor_division == int(2.7))
+
+print('10' == 10)
