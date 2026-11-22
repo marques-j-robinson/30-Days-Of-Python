@@ -1,15 +1,15 @@
 # Day 2: 30 Days of python programming
-first_name = "Marques"
+first_name = input("What is your first name? ") or "Marques"
 print(first_name, type(first_name))
-last_name = "Robinson"
+last_name = input("What is your last name? ") or "Robinson"
 print(last_name, type(last_name))
-full_name = first_name+last_name
+full_name = f"{first_name} {last_name}"
 print(full_name, type(full_name))
-country = "United States of America"
+country = input("What country do you live in? ") or "United States of America"
 print(country, type(country))
 city = "Everett"
 print(city, type(city))
-age = 31
+age = int(input("How old are you? ")) or 31
 print(age, type(age))
 year = 2026
 print(year, type(year))
