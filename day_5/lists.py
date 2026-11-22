@@ -16,3 +16,6 @@ print(len(it_companies))
 print(it_companies[0])
 print(it_companies[len(it_companies)//2])
 print(it_companies[len(it_companies)-1])
+
+it_companies[0] = it_companies[0].upper()
+print(it_companies)
