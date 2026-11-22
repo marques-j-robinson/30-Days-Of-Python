@@ -19,3 +19,6 @@ print(it_companies[len(it_companies)-1])
 
 it_companies[0] = it_companies[0].upper()
 print(it_companies)
+
+it_companies.append('SpaceX')
+print(it_companies)
