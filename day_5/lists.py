@@ -26,3 +26,5 @@ print(it_companies)
 mid = len(it_companies) // 2
 it_companies.insert(mid, 'Tesla')
 print(it_companies)
+
+it_companies[1] = it_companies[1].upper()
