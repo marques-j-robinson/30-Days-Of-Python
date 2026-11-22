@@ -77,3 +77,5 @@ libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 print(" # ".join(libraries))
 
 print('I am enjoying this challenge.\nI just wonder what is next.')
+
+print('Name\t\tAge\t\tCountry\t\tCity\nAsabeneh\t250\t\tFinland\t\tHelsinki')
