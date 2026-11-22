@@ -46,7 +46,7 @@ print(floor_division)
 
 import math
 
-r = 30
+r = int(input("What is the radius of circle? "))
 
 area_of_circle = math.pi * (r**2)
 print(f'area of circle with radius {r} meters is {area_of_circle:.2f} meters')
