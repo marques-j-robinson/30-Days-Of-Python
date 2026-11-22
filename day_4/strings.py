@@ -29,3 +29,5 @@ print(company.replace('coding', 'Python'))
 print('Python for Everyone'.replace('Everyone', 'All'))
 
 print('Coding For All'.split())
+
+print("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(', '))
