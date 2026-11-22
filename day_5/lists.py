@@ -28,3 +28,5 @@ it_companies.insert(mid, 'Tesla')
 print(it_companies)
 
 it_companies[1] = it_companies[1].upper()
+
+print('#; '.join(it_companies))
