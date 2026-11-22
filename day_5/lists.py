@@ -51,3 +51,5 @@ print(it_companies)
 mid = len(it_companies)//2
 del it_companies[mid]
 print(it_companies)
+
+del it_companies[len(it_companies)-1]
