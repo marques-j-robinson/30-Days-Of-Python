@@ -10,3 +10,4 @@ print(states[len(states)-1])
 mixed_data_types = ['Marques Robinson', 31, 5.11, False, '100 Baker St']
 
 it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazone']
+print(it_companies)
