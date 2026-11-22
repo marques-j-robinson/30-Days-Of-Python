@@ -32,3 +32,6 @@ it_companies[1] = it_companies[1].upper()
 print('#; '.join(it_companies))
 
 print('Apple' in it_companies)
+
+it_companies.sort()
+print(it_companies)
