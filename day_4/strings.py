@@ -12,3 +12,6 @@ print(len(company))
 
 company = company.upper()
 print(company)
+
+company = company.lower()
+print(company)
