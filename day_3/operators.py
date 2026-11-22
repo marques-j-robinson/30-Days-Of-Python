@@ -28,3 +28,15 @@ area_of_circle = 3.14*radius*radius
 print(f'The area of the circle is {area_of_circle}')
 circum_of_cirlce = 2 * 3.14 * radius
 print(f'The circumference of the cirlce is {circum_of_cirlce}')
+
+# Equation: y = mx + b
+m = 2
+b = -2
+
+slope_a = m
+y_intercept = b
+x_intercept = -b / m # Solving 0 = mx + b for x
+
+print(f"Slope: {slope_a}")
+print(f"x-intercept: ({x_intercept}, 0)")
+print(f"y-intercept: (0, {y_intercept})")
