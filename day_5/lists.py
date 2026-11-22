@@ -40,3 +40,4 @@ it_companies.reverse()
 print(it_companies)
 
 print(it_companies[3:])
+print(it_companies[:len(it_companies)-3])
