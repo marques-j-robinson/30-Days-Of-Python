@@ -46,3 +46,6 @@ print("".join(word[0].upper() for word in s.split(" ")))
 
 print(s.find('C'))
 print(s.find('F'))
+
+s = 'Coding For All People'
+print(s.rfind('l'))
