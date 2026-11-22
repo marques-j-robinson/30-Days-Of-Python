@@ -37,3 +37,6 @@ print("Coding For All"[0])
 s = "Coding For All"
 print(s[len(s)-1])
 print(s[10])
+
+s = "Python For Everyone"
+print("".join(word[0].upper() for word in s.split(" ")))
