@@ -23,3 +23,23 @@ bg_color, highlight, shadow = 'Blue', 'Yellow', 'Brown'
 print(bg_color, type(bg_color))
 print(highlight, type(highlight))
 print(shadow, type(shadow))
+
+print(f'Length of first name, {len(first_name)}')
+print(f'difference between first and last name: {abs(len(first_name)-len(last_name))}')
+
+num_one = 5
+num_two = 6
+total = num_one+num_two
+print(total)
+diff = num_two-num_one
+print(diff)
+product = num_two*num_one
+print(product)
+division = num_one/num_two
+print(division)
+remainder = num_two%num_one
+print(remainder)
+exp = num_one**num_two
+print(exp)
+floor_division = num_one//num_two
+print(floor_division)
