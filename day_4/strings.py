@@ -21,3 +21,5 @@ print(company.title())
 print(company.swapcase())
 
 print(company.partition(" ")[2])
+
+print(company.find("Coding") >= 0)
