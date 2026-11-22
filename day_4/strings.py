@@ -8,3 +8,4 @@ print(string)
 
 company = 'Coding For All'
 print(company)
+print(len(company))
