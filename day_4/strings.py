@@ -65,3 +65,4 @@ print(s)
 
 s = 'Coding For All'
 print(s.startswith('Coding'))
+print(s.endswith('coding'))
