@@ -43,3 +43,13 @@ exp = num_one**num_two
 print(exp)
 floor_division = num_one//num_two
 print(floor_division)
+
+import math
+
+r = 30
+
+area_of_circle = math.pi * (r**2)
+print(f'area of circle with radius {r} meters is {area_of_circle:.2f} meters')
+
+circum_of_circle = 2 * math.pi * r
+print(f'circumference of circle with radius {r} meters is {circum_of_circle:.2f} meters')
