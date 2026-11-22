@@ -38,3 +38,5 @@ print(it_companies)
 
 it_companies.reverse()
 print(it_companies)
+
+print(it_companies[3:])
