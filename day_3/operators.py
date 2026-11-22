@@ -100,3 +100,6 @@ print(f"Your weekly earning is {earnings}")
 years = int(input("Enter number of years you have lived: "))
 s = years * 365 * 24 * 60 * 60
 print(f"You have lived for {s} seconds.")
+
+for i in range(1, 6):
+    print(f"{i} {1} {i} {i**2} {i**3}")
