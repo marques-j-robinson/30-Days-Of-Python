@@ -12,3 +12,7 @@ mixed_data_types = ['Marques Robinson', 31, 5.11, False, '100 Baker St']
 it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
 print(it_companies)
 print(len(it_companies))
+
+print(it_companies[0])
+print(it_companies[len(it_companies)//2])
+print(it_companies[len(it_companies)-1])
