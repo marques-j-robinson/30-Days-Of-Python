@@ -53,3 +53,5 @@ del it_companies[mid]
 print(it_companies)
 
 del it_companies[len(it_companies)-1]
+
+it_companies = []
