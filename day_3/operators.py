@@ -40,3 +40,13 @@ x_intercept = -b / m # Solving 0 = mx + b for x
 print(f"Slope: {slope_a}")
 print(f"x-intercept: ({x_intercept}, 0)")
 print(f"y-intercept: (0, {y_intercept})")
+
+
+x1 = 2
+y1 = 2
+x2 = 6
+y2 = 10
+slope = (y2-y1)/(x2-x1)
+print(f'Slope: {slope}')
+euclidean_distance= ((x2-x1)**2+(y2-y1**2)**0.5)
+print(f'Euclidean distance: {euclidean_distance}')
