@@ -79,3 +79,7 @@ print(" # ".join(libraries))
 print('I am enjoying this challenge.\nI just wonder what is next.')
 
 print('Name\t\tAge\t\tCountry\t\tCity\nAsabeneh\t250\t\tFinland\t\tHelsinki')
+
+radius = 10
+area = 3.14 * radius ** 2
+print(f'The area of a circle with radius {radius} is {int(area)} meters square.')
