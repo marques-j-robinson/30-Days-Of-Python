@@ -65,3 +65,5 @@ print('on' in 'python' and 'on' in 'dragon')
 
 sentence = 'I hope this course is not full of jargon'
 print('jargon' in sentence)
+
+print('on' not in 'python' and 'on' not in 'dragon')
