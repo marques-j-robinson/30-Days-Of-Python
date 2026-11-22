@@ -62,3 +62,6 @@ len_str_one = len('python')
 len_str_two = len('dragon')
 print(len_str_one != len_str_two)
 print('on' in 'python' and 'on' in 'dragon')
+
+sentence = 'I hope this course is not full of jargon'
+print('jargon' in sentence)
