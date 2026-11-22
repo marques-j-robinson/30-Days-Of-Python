@@ -91,3 +91,8 @@ print(floor_division == int(2.7))
 print('10' == 10)
 
 print(int(float('9.8')) == 10)
+
+h = int(input("Enter hours: "))
+rate_per_hour = int(input("Enter rate per hour: "))
+earnings = h*rate_per_hour
+print(f"Your weekly earning is {earnings}")
