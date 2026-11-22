@@ -57,3 +57,7 @@ print(f'Difference between slopes: {slope_diff}')
 x = -3
 y = x**2 + 6*x + 9
 print(y)
+
+len_str_one = len('python')
+len_str_two = len('dragon')
+print(len_str_one != len_str_two)
