@@ -50,3 +50,6 @@ slope = (y2-y1)/(x2-x1)
 print(f'Slope: {slope}')
 euclidean_distance= ((x2-x1)**2+(y2-y1**2)**0.5)
 print(f'Euclidean distance: {euclidean_distance}')
+
+slope_diff = abs(slope_a - slope)
+print(f'Difference between slopes: {slope_diff}')
