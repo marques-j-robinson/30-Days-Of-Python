@@ -67,3 +67,11 @@ sentence = 'I hope this course is not full of jargon'
 print('jargon' in sentence)
 
 print('on' not in 'python' and 'on' not in 'dragon')
+
+s = 'python'
+s_len = len(s)
+print(f"The length of string 'python' is {s_len} {type(s_len)}")
+s_len_float = float(s_len)
+print(f"The float value for the length is {s_len_float} {type(s_len_float)}")
+s_len_float_str = str(s_len_float)
+print(f"The string value of the float length is {s_len_float_str} {type(s_len_float_str)}")
