@@ -27,3 +27,5 @@ print(company.find("Coding") >= 0)
 print(company.replace('coding', 'Python'))
 
 print('Python for Everyone'.replace('Everyone', 'All'))
+
+print('Coding For All'.split())
