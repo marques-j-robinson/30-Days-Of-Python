@@ -15,3 +15,7 @@ print(company)
 
 company = company.lower()
 print(company)
+
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
