@@ -53,3 +53,7 @@ print(f'Euclidean distance: {euclidean_distance}')
 
 slope_diff = abs(slope_a - slope)
 print(f'Difference between slopes: {slope_diff}')
+
+x = -3
+y = x**2 + 6*x + 9
+print(y)
