@@ -69,3 +69,6 @@ print(s.endswith('coding'))
 
 s = '   Coding For All      '
 print(s.strip())
+
+print('30DaysOfPython'.isidentifier())
+print('thirty_days_of_python'.isidentifier())
