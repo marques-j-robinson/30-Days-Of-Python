@@ -75,3 +75,12 @@ s_len_float = float(s_len)
 print(f"The float value for the length is {s_len_float} {type(s_len_float)}")
 s_len_float_str = str(s_len_float)
 print(f"The string value of the float length is {s_len_float_str} {type(s_len_float_str)}")
+
+n = 1
+print(f'Is {n} even? {n%2==0}')
+n = 2
+print(f'Is {n} even? {n%2==0}')
+n = 1
+print(f'Is {n} odd? {n%2!=0}')
+n = 2
+print(f'Is {n} odd? {n%2!=0}')
