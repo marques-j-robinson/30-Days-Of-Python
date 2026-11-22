@@ -37,3 +37,5 @@ print(type([1, 2, 3]))
 print(type((1, 2, 3)))
 print(type({1, 2, 3}))
 print(type({"test": 1}))
+
+print(((10-2)**2+(8-3)**2)**0.5)
