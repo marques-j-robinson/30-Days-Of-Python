@@ -57,3 +57,8 @@ del it_companies[len(it_companies)-1]
 it_companies = []
 
 del it_companies
+
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+a = front_end+back_end
+print(a)
