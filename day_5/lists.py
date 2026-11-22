@@ -41,3 +41,6 @@ print(it_companies)
 
 print(it_companies[3:])
 print(it_companies[:len(it_companies)-3])
+
+mid = len(it_companies) // 2
+print(it_companies[:mid] + it_companies[mid+1:])
