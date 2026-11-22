@@ -22,3 +22,9 @@ area_of_rectangle = length*width
 print(f'The area of the rectangle if {area_of_rectangle}')
 perimeter_of_rectangle = 2*(length+width)
 print(f'The perimeter of the rectangle if {perimeter_of_rectangle}')
+
+radius = int(input("Enter radius: "))
+area_of_circle = 3.14*radius*radius
+print(f'The area of the circle is {area_of_circle}')
+circum_of_cirlce = 2 * 3.14 * radius
+print(f'The circumference of the cirlce is {circum_of_cirlce}')
