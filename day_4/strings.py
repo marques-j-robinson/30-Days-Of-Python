@@ -49,3 +49,6 @@ print(s.find('F'))
 
 s = 'Coding For All People'
 print(s.rfind('l'))
+
+s = 'You cannot end a sentence with because because because is a conjunction'
+print(s.find('because'))
