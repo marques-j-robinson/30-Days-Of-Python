@@ -43,3 +43,5 @@ print("".join(word[0].upper() for word in s.split(" ")))
 
 s = "Coding For All"
 print("".join(word[0].upper() for word in s.split(" ")))
+
+print(s.find('C'))
