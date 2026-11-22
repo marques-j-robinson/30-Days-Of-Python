@@ -47,3 +47,7 @@ print(it_companies[:mid] + it_companies[mid+1:])
 
 it_companies.pop(0)
 print(it_companies)
+
+mid = len(it_companies)//2
+del it_companies[mid]
+print(it_companies)
