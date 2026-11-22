@@ -19,3 +19,5 @@ print(company)
 print(company.capitalize())
 print(company.title())
 print(company.swapcase())
+
+print(company.partition(" ")[2])
