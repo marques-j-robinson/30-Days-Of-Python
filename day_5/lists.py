@@ -35,3 +35,6 @@ print('Apple' in it_companies)
 
 it_companies.sort()
 print(it_companies)
+
+it_companies.reverse()
+print(it_companies)
