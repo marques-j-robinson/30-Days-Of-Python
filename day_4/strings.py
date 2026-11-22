@@ -7,3 +7,4 @@ string = f"{a} {b} {c} {d}"
 print(string)
 
 company = 'Coding For All'
+print(company)
