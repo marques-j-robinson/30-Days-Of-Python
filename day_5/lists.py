@@ -62,3 +62,7 @@ front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 back_end = ['Node','Express', 'MongoDB']
 a = front_end+back_end
 print(a)
+full_stack = a.copy()
+full_stack.append('Python')
+full_stack.append('Redux')
+print(full_stack)
