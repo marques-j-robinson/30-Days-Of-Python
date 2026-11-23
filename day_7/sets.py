@@ -8,3 +8,4 @@ print(len(it_companies))
 
 it_companies.add('Twitter')
 it_companies.update(['SpaceX', 'Tesla'])
+it_companies.remove('Twitter')
