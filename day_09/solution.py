@@ -102,3 +102,5 @@ if 'skills' in person.keys():
         print('He is a fullstack developer')
     else:
         print('unknown title')
+
+print(f"{person['first_name']} {person['last_name']} lives in f{person['country']}. He is {'married' if person['marital_status'] else 'not married'}.")
