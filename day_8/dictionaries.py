@@ -22,3 +22,5 @@ print(len(student))
 print(type(student['skills']), student['skills'])
 
 student['skills'].append('C')
+
+print(list(student.keys()))
