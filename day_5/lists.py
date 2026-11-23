@@ -90,3 +90,9 @@ print(max_age - min_age)
 
 avg = sum(ages)/len(ages)
 print(abs((min_age-avg)-(max_age-avg)))
+
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+from data.countries import countries
+print(countries[len(countries)//2])
