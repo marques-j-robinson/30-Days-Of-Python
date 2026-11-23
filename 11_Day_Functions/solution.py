@@ -76,3 +76,9 @@ def add_item(items, item_to_add):
 
 def remove_item(items, item_to_remove):
     items.remove(item_to_remove)
+
+def sum_of_numbers(num):
+    total = 0
+    for i in range(1, num+1):
+        total+=i
+    return total
