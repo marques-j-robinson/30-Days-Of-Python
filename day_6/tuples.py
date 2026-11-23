@@ -28,3 +28,5 @@ print(food_stuff_lt)
 food_stuff_lt = food_stuff_lt[3:]
 food_stuff_lt = food_stuff_lt[:len(food_stuff_lt)-3]
 print(food_stuff_lt)
+
+del food_stuff_tp
