@@ -77,3 +77,7 @@ print(f'max: {max_age}')
 
 ages.append(min_age)
 ages.append(max_age)
+
+ages.sort()
+mid = len(ages)//2
+print(ages[mid])
