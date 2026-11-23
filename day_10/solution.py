@@ -72,7 +72,10 @@ from data.countries_data import countries
 
 unique_languages = set()
 languages = {}
+population = {}
 for c in countries:
+    if c['name'] not in population:
+        population[c['name']] = c['population']
     for language in c['languages']:
         unique_languages.add(language)
         if language not in languages.keys():
@@ -82,3 +85,6 @@ for c in countries:
 print(f'Total number of languages: {len(unique_languages)}')
 sorted_languages = sorted(languages.items(), key=lambda item: item[1], reverse=True)
 print(dict(sorted_languages[:10]))
+
+sorted_pop = sorted(population.items(), key=lambda item: item[1], reverse=True)
+print(dict(sorted_pop[:10]))
