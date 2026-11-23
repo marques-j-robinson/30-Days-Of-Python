@@ -96,3 +96,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 from data.countries import countries
 print(countries[len(countries)//2])
+
+mid = len(countries)//2
+first_half = countries[:mid+1]
+second_half = countries[mid+1:]
+print(len(first_half))
+print(len(second_half))
