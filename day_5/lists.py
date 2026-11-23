@@ -102,3 +102,9 @@ first_half = countries[:mid+1]
 second_half = countries[mid+1:]
 print(len(first_half))
 print(len(second_half))
+
+china, russia, usa, *scandic = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+print(china)
+print(russia)
+print(usa)
+print(scandic)
