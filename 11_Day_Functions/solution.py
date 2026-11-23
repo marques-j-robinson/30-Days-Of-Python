@@ -179,3 +179,13 @@ def is_unique(items):
     return result
 
 print(is_unique(['one', 'one', 'three']))
+
+def is_datatype_unique(items):
+    datatypes = set()
+    for i in items:
+        datatypes.add(type(i))
+    return len(datatypes) == 1
+
+print(is_datatype_unique([1, 2, 3]))
+print(is_datatype_unique(['one', 'two', 'three']))
+print(is_datatype_unique([1, 'two', 'three']))
