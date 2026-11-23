@@ -28,3 +28,16 @@ elif (b>a):
     print(f'{b} is greater than {a}')
 else:
     print(f'{a} and {b} are equal')
+
+score = int(input("What is the students grade: "))
+
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print('B')
+elif score >= 70:
+    print('C')
+elif score >= 60:
+    print('D')
+else:
+    print('F')
