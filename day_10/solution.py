@@ -67,3 +67,11 @@ reversed_fruit = []
 for i in range(len(fruit) - 1, -1, -1):
     reversed_fruit.append(fruit[i])
 print(reversed_fruit)
+
+from data.countries_data import countries
+
+languages = set()
+for c in countries:
+    for language in c['languages']:
+        languages.add(language)
+print(f'Total number of languages: {len(languages)}')
