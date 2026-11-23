@@ -148,3 +148,9 @@ def calculate_variance(nums):
 
 def calculate_variance(nums):
     return statistics.stdev(nums)
+
+def greet(name='Guest'):
+    print(f'Hello, {name}!')
+
+greet()
+greet('Alice')
