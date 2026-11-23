@@ -25,3 +25,7 @@ for i in range(8):
 
 for i in range(11):
     print(f"{i} x {i} = {i*i}")
+
+tech = ['Python', 'Numpy','Pandas','Django', 'Flask']
+for i in tech:
+    print(i)
