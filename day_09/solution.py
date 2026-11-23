@@ -41,3 +41,20 @@ elif score >= 60:
     print('D')
 else:
     print('F')
+
+month = input("What month is it? ").lower()
+winter = ['december', 'january', 'february']
+spring = ['march', 'april', 'may']
+summer = ['june', 'july', 'august']
+autumn = ['september', 'october', 'november']
+
+if month in winter:
+    print('Winter')
+elif month in spring:
+    print('Spring')
+elif month in summer:
+    print('Summer')
+elif month in autumn:
+    print('Autumn')
+else:
+    print('Month Not Found')
