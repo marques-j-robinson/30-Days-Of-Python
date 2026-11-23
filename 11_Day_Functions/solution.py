@@ -64,3 +64,9 @@ def reverse_list(items):
     for i in range(len(items)-1, -1, -1):
         result.append(items[i])
     print(result)
+
+def capitalize_list_items(items):
+    result = []
+    for i in items:
+        result.append(i.capitalize())
+    return result
