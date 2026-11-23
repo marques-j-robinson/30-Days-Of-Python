@@ -86,3 +86,5 @@ person = {
 if 'skills' in person.keys():
     skills = person['skills']
     print(skills[len(skills) // 2])
+    if 'Python' in skills:
+        print('Python is a skill of this person')
