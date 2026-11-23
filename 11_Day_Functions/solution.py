@@ -197,3 +197,21 @@ def is_valid_variable_name(name):
 print(is_valid_variable_name("my_var"))
 print(is_valid_variable_name("2nd_var"))
 print(is_valid_variable_name("for"))
+
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+from data.countries_data import countries
+
+def most_spoken_languages():
+    languages = {}
+    for c in countries:
+        for language in c['languages']:
+            if language not in languages.keys():
+                languages[language] = 1
+            else:
+                languages[language] += 1
+    sorted_languages = sorted(languages.items(), key=lambda item: item[1], reverse=True)
+    return dict(sorted_languages[:10])
+
+print(most_spoken_languages())
