@@ -14,3 +14,4 @@ it_companies.discard('Twitter')
 it_companies.discard('Tesla')
 
 print(A|B)
+print(A&B)
