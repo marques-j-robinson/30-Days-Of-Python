@@ -73,3 +73,6 @@ def capitalize_list_items(items):
 
 def add_item(items, item_to_add):
     items.append(item_to_add)
+
+def remove_item(items, item_to_remove):
+    items.remove(item_to_remove)
