@@ -89,3 +89,10 @@ def sum_of_odds(num):
         if(i%2!=0):
             total+=i
     return total
+
+def sum_of_evens(num):
+    total = 0
+    for i in range(1, num+1):
+        if(i%2==0):
+            total+=i
+    return total
