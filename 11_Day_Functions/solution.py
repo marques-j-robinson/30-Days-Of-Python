@@ -128,3 +128,23 @@ def is_empty(item):
         return len(item) == 0
     else:
         return item == None
+
+import statistics
+
+def calculate_mean(nums):
+    return statistics.mean(nums)
+
+def calculate_median(nums):
+    return statistics.median(nums)
+
+def calculate_mode(nums):
+    return statistics.mode(nums)
+
+def calculate_range(nums):
+    return max(nums) - min(nums)
+
+def calculate_variance(nums):
+    return statistics.variance(nums)
+
+def calculate_variance(nums):
+    return statistics.stdev(nums)
