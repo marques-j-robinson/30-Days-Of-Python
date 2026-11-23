@@ -15,3 +15,20 @@ def add_all_nums(*nums):
 
 def convert_celsius_to_fahrenheit(c):
     return (c * 9/5) + 32
+
+def check_season(m):
+    month = m.lower()
+    winter = ['december', 'january', 'february']
+    spring = ['march', 'april', 'may']
+    summer = ['june', 'july', 'august']
+    autumn = ['september', 'october', 'november']
+    if month in winter:
+        return 'Winter'
+    elif month in spring:
+        return 'Spring'
+    elif month in summer:
+        return 'Summer'
+    elif month in autumn:
+        return 'Autumn'
+    else:
+        return 'Not a valid month'
