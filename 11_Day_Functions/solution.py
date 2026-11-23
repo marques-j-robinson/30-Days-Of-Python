@@ -39,3 +39,18 @@ def calculate_slope(p1, p2):
     if x2 - x1 == 0:
         raise ValueError('Slope is undefined (vertical line)')
     return (y2 - y1) / (x2 - x1)
+
+import cmath
+def solve_quadratic_eqn(a, b, c):
+    # Check if it is a valid quadratic equation
+    if a == 0:
+        raise ValueError("The coefficient 'a' cannot be zero.")
+        
+    # Calculate the discriminant (b² - 4ac)
+    discriminant = (b ** 2) - (4 * a * c)
+    
+    # Calculate the two roots
+    root1 = (-b + cmath.sqrt(discriminant)) / (2 * a)
+    root2 = (-b - cmath.sqrt(discriminant)) / (2 * a)
+    
+    return root1, root2
