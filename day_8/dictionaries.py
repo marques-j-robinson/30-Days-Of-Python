@@ -28,3 +28,4 @@ print(list(student.values()))
 print(student.items())
 
 del student['address']
+del student
