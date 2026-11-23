@@ -50,3 +50,14 @@ for i in range(1, 101):
 print(f'The sum of all numbers is {total}')
 print(f'The sum of all evens is {even_sum}')
 print(f'The sum of all odds is {odd_sum}')
+
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+from data.countries import countries
+
+contries_with_land_in_name = []
+for i in countries:
+    if 'land' in i:
+        contries_with_land_in_name.append(i)
+print(contries_with_land_in_name)
