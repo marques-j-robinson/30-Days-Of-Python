@@ -82,3 +82,10 @@ def sum_of_numbers(num):
     for i in range(1, num+1):
         total+=i
     return total
+
+def sum_of_odds(num):
+    total = 0
+    for i in range(1, num+1):
+        if(i%2!=0):
+            total+=i
+    return total
