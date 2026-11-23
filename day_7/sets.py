@@ -15,3 +15,4 @@ it_companies.discard('Tesla')
 
 print(A|B)
 print(A&B)
+print(A.issubset(B))
