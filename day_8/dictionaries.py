@@ -19,3 +19,4 @@ student = {
 }
 
 print(len(student))
+print(type(student['skills']), student['skills'])
