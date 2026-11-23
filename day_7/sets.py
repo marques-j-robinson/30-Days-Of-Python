@@ -29,3 +29,8 @@ age_set = set(age)
 print(len(age))
 print(len(age_set))
 # The list is longer because a set does not contian duplicates
+
+# Strings contain ordered elements. Strings also support indexing and are immutable. Strings are wrapped in quotes.
+# Lists contain ordered elements. Lists also support indexing and are mutable. Lookup speed of O(n). Lists are wrapped in square brackets.
+# Tuples contain ordered elements. Tuples also support indexing and are immutable. Lookup speed of O(n). Tuples are wrapped in parenthasis.
+# Sets contain unordered elements. Sets also do not support indexing and are immutable. Lookup speed of O(1). Sets are wrapped in curly braces.
