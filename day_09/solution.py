@@ -18,3 +18,13 @@ elif (age > my_age):
         print(f'You are {age-my_age} years older than me')
 else:
     print('We are the same age!')
+
+a = int(input('Enter number one: '))
+b = int(input('Enter number two: '))
+
+if (a>b):
+    print(f'{a} is greater than {b}')
+elif (b>a):
+    print(f'{b} is greater than {a}')
+else:
+    print(f'{a} and {b} are equal')
