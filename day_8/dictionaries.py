@@ -25,3 +25,4 @@ student['skills'].append('C')
 
 print(list(student.keys()))
 print(list(student.values()))
+print(student.items())
