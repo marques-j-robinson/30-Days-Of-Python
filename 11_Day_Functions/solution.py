@@ -96,3 +96,15 @@ def sum_of_evens(num):
         if(i%2==0):
             total+=i
     return total
+
+def evens_and_odds(num):
+    if num <= 0:
+        return "Must pass a positive number to this function"
+    even = 0
+    odd = 0
+    for i in range(0, num+1):
+        if(i%2==0):
+            even+=1
+        if(i%2!=0):
+            odd+=1
+    return f"The number of odds are {odd}\nThe number of evens are {even}"
