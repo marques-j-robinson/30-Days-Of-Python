@@ -13,3 +13,9 @@ family_members = siblings
 siblings, parents = family_members[:len(family_members)-2], family_members[len(family_members)-2:]
 print(siblings)
 print(parents)
+
+fruits = ('apples', 'orages', 'banana')
+vegitables = ('grapes', 'kale', 'broccoli')
+animal_products = ('beef', 'chicken', 'pork')
+
+food_stuff_tp = fruits + vegitables + animal_products
