@@ -20,3 +20,4 @@ print(A.isdisjoint(B))
 
 print(A|B)
 print(B|A)
+print(A^B)
