@@ -83,3 +83,7 @@ mid = len(ages)//2
 print(ages[mid])
 
 print(sum(ages)/len(ages))
+
+min_age = ages[0]
+max_age = ages[len(ages)-1]
+print(max_age - min_age)
