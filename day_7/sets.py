@@ -7,3 +7,4 @@ age = [22, 19, 24, 25, 26, 24, 25, 24]
 print(len(it_companies))
 
 it_companies.add('Twitter')
+it_companies.update(['SpaceX', 'Tesla'])
