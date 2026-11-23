@@ -70,5 +70,10 @@ print(full_stack)
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 ages.sort()
-print(f'min: {ages[0]}')
-print(f'max: {ages[len(ages)-1]}')
+min_age = ages[0]
+max_age = ages[len(ages)-1]
+print(f'min: {min_age}')
+print(f'max: {max_age}')
+
+ages.append(min_age)
+ages.append(max_age)
