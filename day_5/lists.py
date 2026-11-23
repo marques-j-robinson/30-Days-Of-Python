@@ -87,3 +87,6 @@ print(sum(ages)/len(ages))
 min_age = ages[0]
 max_age = ages[len(ages)-1]
 print(max_age - min_age)
+
+avg = sum(ages)/len(ages)
+print(abs((min_age-avg)-(max_age-avg)))
