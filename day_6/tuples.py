@@ -19,3 +19,4 @@ vegitables = ('grapes', 'kale', 'broccoli')
 animal_products = ('beef', 'chicken', 'pork')
 
 food_stuff_tp = fruits + vegitables + animal_products
+food_stuff_lt = list(food_stuff_tp)
