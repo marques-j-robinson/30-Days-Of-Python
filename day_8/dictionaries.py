@@ -6,7 +6,7 @@ dog['age'] = 2
 
 print(dog)
 
-studen = {
+student = {
     "first_name": "Marques",
     "last_name": "Robinson",
     "gender": "male",
@@ -17,3 +17,5 @@ studen = {
     "city": "Everett",
     "address": "100 Baker St"
 }
+
+print(len(student))
