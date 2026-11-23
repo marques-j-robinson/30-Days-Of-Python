@@ -24,3 +24,8 @@ print(A^B)
 
 del A
 del B
+
+age_set = set(age)
+print(len(age))
+print(len(age_set))
+# The list is longer because a set does not contian duplicates
