@@ -39,6 +39,14 @@ for i in range(1, 101):
         print(i)
 
 total = 0
+even_sum = 0
+odd_sum = 0
 for i in range(1, 101):
     total+=i
+    if(i%2==0):
+        even_sum+=i
+    if(i%2!=0):
+        odd_sum+=i
 print(f'The sum of all numbers is {total}')
+print(f'The sum of all evens is {even_sum}')
+print(f'The sum of all odds is {odd_sum}')
