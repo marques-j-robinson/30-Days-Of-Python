@@ -34,3 +34,6 @@ print(len(age_set))
 # Lists contain ordered elements. Lists also support indexing and are mutable. Lookup speed of O(n). Lists are wrapped in square brackets.
 # Tuples contain ordered elements. Tuples also support indexing and are immutable. Lookup speed of O(n). Tuples are wrapped in parenthasis.
 # Sets contain unordered elements. Sets also do not support indexing and are immutable. Lookup speed of O(1). Sets are wrapped in curly braces.
+
+sentence = 'I am a teacher and I love to inspire and teach people'
+print(f'Unique words: {len(set(sentence.split(' ')))}')
