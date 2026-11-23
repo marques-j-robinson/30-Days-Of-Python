@@ -70,8 +70,15 @@ print(reversed_fruit)
 
 from data.countries_data import countries
 
-languages = set()
+unique_languages = set()
+languages = {}
 for c in countries:
     for language in c['languages']:
-        languages.add(language)
-print(f'Total number of languages: {len(languages)}')
+        unique_languages.add(language)
+        if language not in languages.keys():
+            languages[language] = 1
+        else:
+            languages[language] += 1
+print(f'Total number of languages: {len(unique_languages)}')
+sorted_languages = sorted(languages.items(), key=lambda item: item[1], reverse=True)
+print(dict(sorted_languages[:10]))
