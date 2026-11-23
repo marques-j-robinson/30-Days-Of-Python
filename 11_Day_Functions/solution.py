@@ -116,3 +116,15 @@ def factorial(n):
     for i in range(1, n + 1):
         result *= i
     return result
+
+def is_empty(item):
+    if type(item) == str:
+        return item == ""
+    elif type(item) == int:
+        return item == 0
+    elif type(item) == float:
+        return item == 0.0
+    elif type(item) == list or type(item) == tuple or type(item) == set or type(item) == dict:
+        return len(item) == 0
+    else:
+        return item == None
