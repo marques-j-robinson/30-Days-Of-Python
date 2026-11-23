@@ -17,3 +17,6 @@ print(A|B)
 print(A&B)
 print(A.issubset(B))
 print(A.isdisjoint(B))
+
+print(A|B)
+print(B|A)
