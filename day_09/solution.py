@@ -58,3 +58,5 @@ elif month in autumn:
     print('Autumn')
 else:
     print('Month Not Found')
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
