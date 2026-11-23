@@ -83,8 +83,22 @@ person = {
     }
 }
 
+frontend = ['JavaScript', 'React']
+backend = ['Node', 'Python', 'MongoDB']
+fullstack = ['React', 'Node', 'MongoDB']
+
 if 'skills' in person.keys():
     skills = person['skills']
     print(skills[len(skills) // 2])
+    
     if 'Python' in skills:
         print('Python is a skill of this person')
+
+    if all(item in frontend for item in skills):
+        print('He is a front end developer')
+    elif any(item in backend for item in skills):
+        print('He is a back end developer')
+    elif any(item in fullstack for item in skills):
+        print('He is a fullstack developer')
+    else:
+        print('unknown title')
