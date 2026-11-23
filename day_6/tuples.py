@@ -20,3 +20,6 @@ animal_products = ('beef', 'chicken', 'pork')
 
 food_stuff_tp = fruits + vegitables + animal_products
 food_stuff_lt = list(food_stuff_tp)
+
+mid = len(food_stuff_tp)//2
+food_stuff_tp = food_stuff_tp[:mid] + food_stuff_tp[mid+1:]
