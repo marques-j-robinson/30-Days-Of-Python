@@ -170,3 +170,12 @@ def is_prime(n):
     return True
 print(is_prime(11))
 print(is_prime(15))
+
+def is_unique(items):
+    result = True
+    for idx, i in enumerate(items):
+        if i in items[idx+1:]:
+            result = False
+    return result
+
+print(is_unique(['one', 'one', 'three']))
