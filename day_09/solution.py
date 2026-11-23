@@ -82,3 +82,7 @@ person = {
         "zipcode": "54321"
     }
 }
+
+if 'skills' in person.keys():
+    skills = person['skills']
+    print(skills[len(skills) // 2])
