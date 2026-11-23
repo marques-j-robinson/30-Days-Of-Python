@@ -215,3 +215,13 @@ def most_spoken_languages():
     return dict(sorted_languages[:10])
 
 print(most_spoken_languages())
+
+def most_populated_countries():
+    population = {}
+    for c in countries:
+        if c['name'] not in population:
+            population[c['name']] = c['population']
+    sorted_pop = sorted(population.items(), key=lambda item: item[1], reverse=True)
+    return dict(sorted_pop[:10])
+
+print(most_populated_countries())
