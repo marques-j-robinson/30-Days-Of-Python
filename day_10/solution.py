@@ -29,3 +29,7 @@ for i in range(11):
 tech = ['Python', 'Numpy','Pandas','Django', 'Flask']
 for i in tech:
     print(i)
+
+for i in range(1, 101):
+    if (i % 2 == 0):
+        print(i)
