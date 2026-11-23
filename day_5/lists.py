@@ -66,3 +66,5 @@ full_stack = a.copy()
 full_stack.append('Python')
 full_stack.append('Redux')
 print(full_stack)
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
