@@ -108,3 +108,11 @@ def evens_and_odds(num):
         if(i%2!=0):
             odd+=1
     return f"The number of odds are {odd}\nThe number of evens are {even}"
+
+def factorial(n):
+    if n < 0:
+        raise ValueError("Factorial is not defined for negative numbers")
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
