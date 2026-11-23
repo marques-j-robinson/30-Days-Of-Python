@@ -12,3 +12,6 @@ def add_all_nums(*nums):
             break
         total += num
     return total
+
+def convert_celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
