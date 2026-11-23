@@ -54,3 +54,7 @@ def solve_quadratic_eqn(a, b, c):
     root2 = (-b - cmath.sqrt(discriminant)) / (2 * a)
     
     return root1, root2
+
+def print_list(items):
+    for i in items:
+        print(i)
