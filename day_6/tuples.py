@@ -23,3 +23,8 @@ food_stuff_lt = list(food_stuff_tp)
 
 mid = len(food_stuff_tp)//2
 food_stuff_tp = food_stuff_tp[:mid] + food_stuff_tp[mid+1:]
+
+print(food_stuff_lt)
+food_stuff_lt = food_stuff_lt[3:]
+food_stuff_lt = food_stuff_lt[:len(food_stuff_lt)-3]
+print(food_stuff_lt)
