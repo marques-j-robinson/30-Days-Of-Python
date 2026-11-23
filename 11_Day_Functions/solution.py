@@ -154,3 +154,8 @@ def greet(name='Guest'):
 
 greet()
 greet('Alice')
+
+def show_args(**args):
+    print(args)
+
+show_args(name='test', year=2026, season='Winter')
