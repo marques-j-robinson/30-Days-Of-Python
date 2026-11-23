@@ -32,3 +32,4 @@ print(food_stuff_lt)
 del food_stuff_tp
 
 nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+print('Estonia' in nordic_countries)
