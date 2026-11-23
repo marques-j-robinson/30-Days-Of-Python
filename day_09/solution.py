@@ -67,3 +67,18 @@ if new_fruit in fruits:
 else:
     fruits.append(new_fruit)
     print(fruits)
+
+person = {
+    "first_name": "Marques",
+    "last_name": "Robinson",
+    "gender": "male",
+    "age": 31,
+    "marital_status": False,
+    "skills": ["HTML", "CSS", "WordPress", "JavaScript", "Python", "MySQL", "AWS"],
+    "country": "United States of America",
+    "city": "Everett",
+    "address": {
+        "street": "100 Baker St",
+        "zipcode": "54321"
+    }
+}
