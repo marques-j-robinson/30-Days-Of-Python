@@ -189,3 +189,11 @@ def is_datatype_unique(items):
 print(is_datatype_unique([1, 2, 3]))
 print(is_datatype_unique(['one', 'two', 'three']))
 print(is_datatype_unique([1, 'two', 'three']))
+
+import keyword
+def is_valid_variable_name(name):
+    return name.isidentifier() and not keyword.iskeyword(name)
+
+print(is_valid_variable_name("my_var"))
+print(is_valid_variable_name("2nd_var"))
+print(is_valid_variable_name("for"))
