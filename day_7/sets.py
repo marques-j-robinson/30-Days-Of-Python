@@ -9,3 +9,6 @@ print(len(it_companies))
 it_companies.add('Twitter')
 it_companies.update(['SpaceX', 'Tesla'])
 it_companies.remove('Twitter')
+# remove() raises a KeyError if the element is not in the set, whereas discard() does nothing and raises no error.
+it_companies.discard('Twitter')
+it_companies.discard('Tesla')
