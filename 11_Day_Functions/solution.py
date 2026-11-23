@@ -1,4 +1,5 @@
 def add_two_numbers(a, b):
     return a+b
 
-print(add_two_numbers(2, 2))
+def area_of_circle(r):
+    return 3.14*r**2
