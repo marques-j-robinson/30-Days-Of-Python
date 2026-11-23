@@ -60,3 +60,10 @@ else:
     print('Month Not Found')
 
 fruits = ['banana', 'orange', 'mango', 'lemon']
+
+new_fruit = input("Enter new fruit: ")
+if new_fruit in fruits:
+    print('That fruit already exist in the list')
+else:
+    fruits.append(new_fruit)
+    print(fruits)
