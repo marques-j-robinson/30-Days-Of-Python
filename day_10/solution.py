@@ -61,3 +61,9 @@ for i in countries:
     if 'land' in i:
         contries_with_land_in_name.append(i)
 print(contries_with_land_in_name)
+
+fruit = ['banana', 'orange', 'mango', 'lemon']
+reversed_fruit = []
+for i in range(len(fruit) - 1, -1, -1):
+    reversed_fruit.append(fruit[i])
+print(reversed_fruit)
