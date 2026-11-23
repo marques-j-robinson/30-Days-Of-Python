@@ -70,3 +70,6 @@ def capitalize_list_items(items):
     for i in items:
         result.append(i.capitalize())
     return result
+
+def add_item(items, item_to_add):
+    items.append(item_to_add)
