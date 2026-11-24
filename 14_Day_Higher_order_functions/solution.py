@@ -30,3 +30,6 @@
 # Decorators
 # A decorator is a design pattern in Python that allows a user to add new functionality
 # to an existing object without modifying its structure.
+
+# This is a function that is passed in as an argument to the higher order function and will be executed for each
+# item in the iterable sequence also passed in to map, filter, or reduce
