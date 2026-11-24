@@ -95,3 +95,11 @@ print(get_string_lists(numbers))
 
 total = reduce(add_two_nums, numbers)
 print(total)
+
+def concat_str(a, b):
+    if b != 'Iceland':
+        return f'{a}, {b}'
+    else:
+        return f'{a}, and {b} are north European countries'
+concat_countries = reduce(concat_str, countries)
+print(f"{concat_countries}")
