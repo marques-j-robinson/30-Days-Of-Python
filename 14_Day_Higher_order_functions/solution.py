@@ -136,3 +136,12 @@ print(get_first_ten_countries())
 def get_last_ten_countries():
     return countries[len(countries)-10:]
 print(get_last_ten_countries())
+
+from data.countries_data import countries
+
+countries.sort(key=lambda c: c['name'])
+print(list(map(lambda i: i['name'], countries)))
+countries.sort(key=lambda c: c['capital'])
+print(list(map(lambda i: i['capital'], countries)))
+countries.sort(key=lambda c: c['population'])
+print(list(map(lambda i: i['name'], countries)))
