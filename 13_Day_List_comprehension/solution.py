@@ -11,3 +11,7 @@ print([(i*1, 1, i*1, i**2, i**3, i**4, i**5) for i in range(11)])
 countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
 print([[t[0].upper(), t[0][:3].upper(), t[1]] for c in countries for t in c])
 print([{"country": t[0], "city": t[1]} for c in countries for t in c])
+
+names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
+
+print([f'{n[0]} {n[1]}' for name in names for n in name])
