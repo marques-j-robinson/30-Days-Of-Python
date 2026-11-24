@@ -46,3 +46,8 @@ for i in names:
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 for i in numbers:
     print(i)
+
+def uppercase(x):
+    return x.upper()
+new_countries = map(uppercase, countries)
+print(list(new_countries))
