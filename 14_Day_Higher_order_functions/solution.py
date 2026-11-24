@@ -56,3 +56,6 @@ def square(n):
     return n**2
 squared_numbers = map(square, numbers)
 print(list(squared_numbers))
+
+new_names = map(uppercase, names)
+print(list(new_names))
