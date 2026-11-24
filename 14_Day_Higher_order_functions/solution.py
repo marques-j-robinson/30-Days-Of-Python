@@ -103,3 +103,17 @@ def concat_str(a, b):
         return f'{a}, and {b} are north European countries'
 concat_countries = reduce(concat_str, countries)
 print(f"{concat_countries}")
+
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+from data.countries import countries
+def categorize_countries(pattern):
+    def ends_with(c):
+        return c.find(pattern) != -1
+    return list(map(lambda i: i.title(), filter(ends_with, map(lambda i: i.lower(), countries))))
+
+print(categorize_countries('land'))
+print(categorize_countries('ia'))
+print(categorize_countries('island'))
+print(categorize_countries('stan'))
