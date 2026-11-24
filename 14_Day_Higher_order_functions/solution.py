@@ -74,3 +74,8 @@ def more_than_six_chars(x):
     return len(x) <= 6
 new_countries = filter(more_than_six_chars, countries)
 print(list(new_countries))
+
+def start_without_E(x):
+    return x[0] != 'E'
+new_countries = filter(start_without_E, countries)
+print(list(new_countries))
