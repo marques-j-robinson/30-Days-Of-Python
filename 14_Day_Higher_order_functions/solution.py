@@ -145,3 +145,16 @@ countries.sort(key=lambda c: c['capital'])
 print(list(map(lambda i: i['capital'], countries)))
 countries.sort(key=lambda c: c['population'])
 print(list(map(lambda i: i['name'], countries)))
+
+def most_spoken_languages():
+    languages = {}
+    for c in countries:
+        for language in c['languages']:
+            if language not in languages.keys():
+                languages[language] = 1
+            else:
+                languages[language] += 1
+    sorted_languages = sorted(languages.items(), key=lambda item: item[1], reverse=True)
+    return dict(sorted_languages[:10])
+
+print(most_spoken_languages())
