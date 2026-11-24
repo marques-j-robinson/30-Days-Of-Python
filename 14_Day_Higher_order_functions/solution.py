@@ -117,3 +117,14 @@ print(categorize_countries('land'))
 print(categorize_countries('ia'))
 print(categorize_countries('island'))
 print(categorize_countries('stan'))
+
+def countries_dict():
+    res = {}
+    for c in countries:
+        if c[0] not in res:
+            res[c[0]] = 1
+        else:
+            res[c[0]] += 1
+    return res
+
+print(countries_dict())
