@@ -10,3 +10,4 @@ print([(i*1, 1, i*1, i**2, i**3, i**4, i**5) for i in range(11)])
 
 countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
 print([[t[0].upper(), t[0][:3].upper(), t[1]] for c in countries for t in c])
+print([{"country": t[0], "city": t[1]} for c in countries for t in c])
