@@ -1,12 +1,12 @@
-import string
-import random
+from string import *
+from random import *
 
-id_values = list(string.ascii_letters + string.digits)
+id_values = list(ascii_letters + digits)
 
 def random_user_id(id_length):
     user_id = ''
     for _ in range(id_length):
-        user_id += random.choice(id_values)
+        user_id += choice(id_values)
     return user_id
 
 def user_id_gen_by_user():
