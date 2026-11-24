@@ -49,7 +49,18 @@ def generate_colors(color_type, qty):
     else:
         return 'Invalid color type'
 
-print(generate_colors('hexa', 3))
-print(generate_colors('hexa', 1))
-print(generate_colors('rgb', 3))
-print(generate_colors('rgb', 1))
+# print(generate_colors('hexa', 3))
+# print(generate_colors('hexa', 1))
+# print(generate_colors('rgb', 3))
+# print(generate_colors('rgb', 1))
+
+def shuffle_list(items):
+    shuffled = []
+    while len(items) > 0:
+        last_idx = len(items)-1
+        rand_idx = randint(0, last_idx)
+        shuffled.append(items[rand_idx])
+        items.pop(rand_idx)
+    return shuffled
+
+print(shuffle_list(['a', 'b', 'c', 'd']))
