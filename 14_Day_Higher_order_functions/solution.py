@@ -33,3 +33,8 @@
 
 # This is a function that is passed in as an argument to the higher order function and will be executed for each
 # item in the iterable sequence also passed in to map, filter, or reduce
+
+countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+
+for i in countries:
+    print(i)
