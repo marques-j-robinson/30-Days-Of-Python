@@ -88,3 +88,7 @@ def add_two_nums(a, b):
     return a+b
 new_numbers = reduce(add_two_nums, filter(is_even, map(square, numbers)))
 print(new_numbers)
+
+def get_string_lists(items):
+    return list(map(lambda i: str(i), items))
+print(get_string_lists(numbers))
