@@ -132,3 +132,7 @@ print(countries_dict())
 def get_first_ten_countries():
     return countries[:10]
 print(get_first_ten_countries())
+
+def get_last_ten_countries():
+    return countries[len(countries)-10:]
+print(get_last_ten_countries())
