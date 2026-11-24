@@ -64,3 +64,8 @@ def no_land(x):
     return 'land' not in x
 new_countries = filter(no_land, countries)
 print(list(new_countries))
+
+def no_six_chars(x):
+    return len(x) != 6
+new_countries = filter(no_six_chars, countries)
+print(list(new_countries))
