@@ -16,3 +16,17 @@
 
 # total = reduce(add_two_nums, numbers_str)
 # print(total)    # 15
+
+# Higher order functions basically represents what all a function can do and in
+# python it is pretty much everything. Python treats functions as higher order objects.
+# Allowing them to take one or more functions as parameters, be returned as the result of another function,
+# be modified, and be assigned to variables.
+
+# Closure
+# Python allows a nested function to access the outer scope of the enclosing function.
+# In Python, closure is created by nesting a function inside another encapsulating
+# function and then returning the inner function. 
+
+# Decorators
+# A decorator is a design pattern in Python that allows a user to add new functionality
+# to an existing object without modifying its structure.
