@@ -92,3 +92,6 @@ print(new_numbers)
 def get_string_lists(items):
     return list(map(lambda i: str(i), items))
 print(get_string_lists(numbers))
+
+total = reduce(add_two_nums, numbers)
+print(total)
