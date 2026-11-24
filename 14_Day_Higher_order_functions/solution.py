@@ -69,3 +69,8 @@ def no_six_chars(x):
     return len(x) != 6
 new_countries = filter(no_six_chars, countries)
 print(list(new_countries))
+
+def more_than_six_chars(x):
+    return len(x) <= 6
+new_countries = filter(more_than_six_chars, countries)
+print(list(new_countries))
