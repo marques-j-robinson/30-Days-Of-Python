@@ -16,3 +16,9 @@ def user_id_gen_by_user():
     for _ in range(qty):
         user_ids.append(random_user_id(id_length))
     return '\n'.join(user_ids)
+
+def rgb_color_gen():
+    r = randint(0, 255)
+    g = randint(0, 255)
+    b = randint(0, 255)
+    return f'rgb({r},{g},{b})'
