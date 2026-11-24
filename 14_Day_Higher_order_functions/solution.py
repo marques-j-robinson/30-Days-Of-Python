@@ -51,3 +51,8 @@ def uppercase(x):
     return x.upper()
 new_countries = map(uppercase, countries)
 print(list(new_countries))
+
+def square(n):
+    return n**2
+squared_numbers = map(square, numbers)
+print(list(squared_numbers))
