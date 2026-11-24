@@ -7,3 +7,6 @@ list_of_lists =[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print([i for items in list_of_lists for i in items])
 
 print([(i*1, 1, i*1, i**2, i**3, i**4, i**5) for i in range(11)])
+
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+print([[t[0].upper(), t[0][:3].upper(), t[1]] for c in countries for t in c])
