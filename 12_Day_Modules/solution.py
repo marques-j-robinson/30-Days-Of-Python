@@ -63,4 +63,14 @@ def shuffle_list(items):
         items.pop(rand_idx)
     return shuffled
 
-print(shuffle_list(['a', 'b', 'c', 'd']))
+# print(shuffle_list(['a', 'b', 'c', 'd']))
+
+def seven_rand_unique_nums():
+    numbers = []
+    while len(numbers) < 7:
+        new_digit = randint(0, 9)
+        if new_digit not in numbers:
+            numbers.append(new_digit)
+    return numbers
+
+print(seven_rand_unique_nums())
