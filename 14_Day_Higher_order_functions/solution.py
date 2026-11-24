@@ -59,3 +59,8 @@ print(list(squared_numbers))
 
 new_names = map(uppercase, names)
 print(list(new_names))
+
+def no_land(x):
+    return 'land' not in x
+new_countries = filter(no_land, countries)
+print(list(new_countries))
