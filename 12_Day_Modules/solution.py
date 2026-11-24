@@ -22,3 +22,16 @@ def rgb_color_gen():
     g = randint(0, 255)
     b = randint(0, 255)
     return f'rgb({r},{g},{b})'
+
+hexa_letters = ascii_letters[:6]
+hexa_values = list(hexa_letters+digits)
+
+def list_of_hexa_colors():
+    qty = int(input("How many colors: "))
+    colors = []
+    for _ in range(qty):
+        c = '#'
+        for _ in range(6):
+            c += choice(hexa_values)
+        colors.append(c)
+    return colors
