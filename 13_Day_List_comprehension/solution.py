@@ -15,3 +15,15 @@ print([{"country": t[0], "city": t[1]} for c in countries for t in c])
 names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
 
 print([f'{n[0]} {n[1]}' for name in names for n in name])
+
+# Calculate slope: m = (y2 - y1) / (x2 - x1)
+slope = lambda x1, y1, x2, y2: (y2 - y1) / (x2 - x1)
+# Calculate y-intercept: b = y1 - m * x1
+y_intercept = lambda x1, y1, x2, y2: y1 - slope(x1, y1, x2, y2) * x1
+
+# Example using points (2, 5) and (4, 9)
+m = slope(2, 5, 4, 9)        # Output: 2.0
+b = y_intercept(2, 5, 4, 9)  # Output: 1.0
+
+print(m)
+print(b)
