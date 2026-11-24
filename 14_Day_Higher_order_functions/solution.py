@@ -79,3 +79,12 @@ def start_without_E(x):
     return x[0] != 'E'
 new_countries = filter(start_without_E, countries)
 print(list(new_countries))
+
+from functools import reduce
+
+def is_even(n):
+    return n%2==0
+def add_two_nums(a, b):
+    return a+b
+new_numbers = reduce(add_two_nums, filter(is_even, map(square, numbers)))
+print(new_numbers)
