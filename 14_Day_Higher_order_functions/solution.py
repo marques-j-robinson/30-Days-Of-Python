@@ -38,3 +38,7 @@ countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
 
 for i in countries:
     print(i)
+
+names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
+for i in names:
+    print(i)
