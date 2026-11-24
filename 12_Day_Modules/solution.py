@@ -35,3 +35,10 @@ def list_of_hexa_colors():
             c += choice(hexa_values)
         colors.append(c)
     return colors
+
+def list_of_rgb_colors():
+    qty = int(input("How many colors: "))
+    colors = []
+    for _ in range(qty):
+        colors.append(rgb_color_gen())
+    return colors
