@@ -9,4 +9,4 @@ print(f'hour {now.hour}')
 print(f'minute {now.minute}')
 print(f'timestamp {now.timestamp()}')
 
-print(now.strftime("%Y-%m-%d %H:%M:%S"))
+print(now.strftime("%m/%d/%Y, %H:%M:%S"))
