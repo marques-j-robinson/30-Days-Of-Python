@@ -14,3 +14,9 @@ print(now.strftime("%m/%d/%Y, %H:%M:%S"))
 date_string = "5 December, 2019"
 date_object = datetime.strptime(date_string, "%d %B, %Y")
 print("date_object =", date_object)
+
+now = datetime.now()
+new_year = datetime(now.year + 1, 1, 1)
+time_left = new_year - now
+print(f"Days left: {time_left.days}")
+print(f"Exact countdown: {time_left}")
