@@ -20,3 +20,8 @@ new_year = datetime(now.year + 1, 1, 1)
 time_left = new_year - now
 print(f"Days left: {time_left.days}")
 print(f"Exact countdown: {time_left}")
+
+old_year = datetime(1970, 1, 1)
+diff = now - old_year
+print(f"Days diff: {diff.days}")
+print(f"Exact time diff: {diff}")
