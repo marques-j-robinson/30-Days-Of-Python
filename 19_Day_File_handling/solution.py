@@ -8,4 +8,5 @@ def count_lines_and_words_from_text_file(filename):
         f.close()
     return res
 
-print(count_lines_and_words_from_text_file('../data/obama_speech.txt'))
+# print(count_lines_and_words_from_text_file('../data/obama_speech.txt'))
+print(count_lines_and_words_from_text_file('../data/michelle_obama_speech.txt'))
