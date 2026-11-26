@@ -36,5 +36,22 @@ def most_spoken_languages(filename, qty):
     return sorted(languages, reverse=True)[:qty]
 
 
-print(most_spoken_languages('../data/countries_data.json', 10))
-print(most_spoken_languages('../data/countries_data.json', 3))
+# print(most_spoken_languages('../data/countries_data.json', 10))
+# print(most_spoken_languages('../data/countries_data.json', 3))
+
+def most_populated_countries(filename, qty):
+    with open(filename, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+        f.close()
+
+    keys_to_keep = ["name", "population"]
+
+    filtered_data = [
+        {k: d[k] for k in keys_to_keep if k in d} 
+        for d in data
+    ]
+
+    return sorted(filtered_data, key=lambda x: x['population'], reverse=True)[:qty]
+
+print(most_populated_countries('../data/countries_data.json', 10))
+print(most_populated_countries('../data/countries_data.json', 3))
