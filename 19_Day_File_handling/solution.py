@@ -10,4 +10,5 @@ def count_lines_and_words_from_text_file(filename):
 
 # print(count_lines_and_words_from_text_file('../data/obama_speech.txt'))
 # print(count_lines_and_words_from_text_file('../data/michelle_obama_speech.txt'))
-print(count_lines_and_words_from_text_file('../data/donald_speech.txt'))
+# print(count_lines_and_words_from_text_file('../data/donald_speech.txt'))
+print(count_lines_and_words_from_text_file('../data/melina_trump_speech.txt'))
