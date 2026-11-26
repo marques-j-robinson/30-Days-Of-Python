@@ -17,4 +17,12 @@ res = sorted(res, key=lambda x: x[0], reverse=True)
 text = "The position of some particles on the horizontal x-axis are -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers from this whole text and find the distance between the two furthest particles."
 
 points = sorted([int(i) for i in re.findall(r'-?\d+', text)])
-print(points[len(points)-1] - points[0])
+# print(points[len(points)-1] - points[0])
+
+def is_valid_variable(var):
+    return re.search(r'[-\d]', var) == None
+
+print(is_valid_variable('first_name')) # True
+print(is_valid_variable('first-name')) # False
+print(is_valid_variable('1first_name')) # False
+print(is_valid_variable('firstname')) # True
