@@ -147,4 +147,11 @@ melania_speech = '../data/melina_trump_speech.txt'
 score = check_text_similarity(michelle_speech, melania_speech)
 # print(f'Text similarity: {score}%')
 
-print(find_most_common_words('romeo_and_juliet.txt', 10))
+# print(find_most_common_words('romeo_and_juliet.txt', 10))
+
+import csv
+
+with open('../data/hacker_news.csv', 'r', encoding='utf-8') as f:
+    data = csv.DictReader(f)
+    for row in data:
+        print(row)
