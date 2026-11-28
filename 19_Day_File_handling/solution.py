@@ -92,4 +92,5 @@ def find_most_common_words(input, qty):
     res = sorted(res, key=lambda x: (x[0], x[1]), reverse=True)
     return res[:qty]
 
-print(find_most_common_words('sample.txt', 10))
+# print(find_most_common_words('sample.txt', 10))
+print(find_most_common_words('obama_speech.txt', 10))
