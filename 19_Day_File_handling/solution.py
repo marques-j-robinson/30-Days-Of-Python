@@ -97,4 +97,52 @@ def find_most_common_words(input, qty):
 # print(find_most_common_words('obama_speech.txt', 10))
 # print(find_most_common_words('michelle_obama_speech.txt', 10))
 # print(find_most_common_words('donald_speech.txt', 10))
-print(find_most_common_words('melina_trump_speech.txt', 10))
+# print(find_most_common_words('melina_trump_speech.txt', 10))
+
+import os
+from pathlib import Path
+import sys
+
+# Add the parent directory to sys.path
+parent_dir = str(Path(__file__).resolve().parent.parent)
+if parent_dir not in sys.path:
+    sys.path.append(parent_dir)
+
+from data.stop_words import stop_words
+
+# accept a string or a file
+def load_text(source):
+    if os.path.isfile(source):
+        with open(source, 'r', encoding='utf-8') as f:
+            return f.read()
+    return source
+
+def clean_text(text):
+    text = load_text(text).lower()
+    words = re.findall(r'\b[a-z]+\b', text)
+    return words
+
+def remove_support_words(words):
+    stop_set = set(w.lower() for w in stop_words)
+    return [word for word in words if word not in stop_set]
+
+def check_text_similarity(text1, text2):
+  words1 = set(remove_support_words(clean_text(text1)))
+  words2 = set(remove_support_words(clean_text(text2)))
+
+  if not words1 and not words2:
+    return 100.0
+  if not words1 or not words2:
+    return 0.0
+
+  intersection = words1.intersection(words2)
+  union = words1.union(words2)
+
+  similarity = (len(intersection) / len(union)) * 100
+  return round(similarity, 2)
+
+michelle_speech = '../data/michelle_obama_speech.txt'
+melania_speech = '../data/melina_trump_speech.txt'
+
+score = check_text_similarity(michelle_speech, melania_speech)
+print(f'Text similarity: {score}%')
