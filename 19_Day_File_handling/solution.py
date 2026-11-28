@@ -153,5 +153,8 @@ import csv
 
 with open('../data/hacker_news.csv', 'r', encoding='utf-8') as f:
     data = csv.DictReader(f)
+    count = 0
     for row in data:
-        print(row)
+        if 'python' in row["title"] or 'Python' in row["title"]:
+            count += 1
+    print(count)
