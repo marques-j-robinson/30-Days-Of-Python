@@ -145,4 +145,6 @@ michelle_speech = '../data/michelle_obama_speech.txt'
 melania_speech = '../data/melina_trump_speech.txt'
 
 score = check_text_similarity(michelle_speech, melania_speech)
-print(f'Text similarity: {score}%')
+# print(f'Text similarity: {score}%')
+
+print(find_most_common_words('romeo_and_juliet.txt', 10))
