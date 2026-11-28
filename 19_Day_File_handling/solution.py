@@ -83,6 +83,7 @@ def find_most_common_words(input, qty):
         data = input
     
     res = []
+    data = " ".join(re.sub(r'[^a-zA-Z0-9 ]', '', data).split())
 
     for word in re.split(' ', data):
         if (not any(len(t) > 1 and t[1] == word for t in res)):
@@ -93,4 +94,5 @@ def find_most_common_words(input, qty):
     return res[:qty]
 
 # print(find_most_common_words('sample.txt', 10))
-print(find_most_common_words('obama_speech.txt', 10))
+# print(find_most_common_words('obama_speech.txt', 10))
+print(find_most_common_words('michelle_obama_speech.txt', 10))
