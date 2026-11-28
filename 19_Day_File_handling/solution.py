@@ -53,5 +53,23 @@ def most_populated_countries(filename, qty):
 
     return sorted(filtered_data, key=lambda x: x['population'], reverse=True)[:qty]
 
-print(most_populated_countries('../data/countries_data.json', 10))
-print(most_populated_countries('../data/countries_data.json', 3))
+# print(most_populated_countries('../data/countries_data.json', 10))
+# print(most_populated_countries('../data/countries_data.json', 3))
+
+
+import re
+
+with open('../data/email_exchanges_big.txt', 'r', encoding='utf-8') as f:
+    lines = f.readlines()
+    f.close()
+
+incoming_email_addresses = []
+
+for line in lines:
+    if 'From ' in line:
+        match = re.match(r"^[^ ]* ([^ ]*) ", line)
+        if match:
+            incoming_email_addresses.append(match.group(1))
+
+unique_email_addresses = list(set(incoming_email_addresses))
+print(unique_email_addresses)
