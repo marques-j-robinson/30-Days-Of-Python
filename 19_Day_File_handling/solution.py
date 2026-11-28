@@ -95,4 +95,5 @@ def find_most_common_words(input, qty):
 
 # print(find_most_common_words('sample.txt', 10))
 # print(find_most_common_words('obama_speech.txt', 10))
-print(find_most_common_words('michelle_obama_speech.txt', 10))
+# print(find_most_common_words('michelle_obama_speech.txt', 10))
+print(find_most_common_words('donald_speech.txt', 10))
