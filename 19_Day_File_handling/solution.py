@@ -153,8 +153,10 @@ import csv
 
 with open('../data/hacker_news.csv', 'r', encoding='utf-8') as f:
     data = csv.DictReader(f)
+    word = 'javascript'
     count = 0
     for row in data:
-        if 'python' in row["title"] or 'Python' in row["title"]:
+        exists = bool(re.search(rf"\b{re.escape(word)}\b", row['title'], re.I))
+        if exists:
             count += 1
     print(count)
