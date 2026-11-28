@@ -153,10 +153,12 @@ import csv
 
 with open('../data/hacker_news.csv', 'r', encoding='utf-8') as f:
     data = csv.DictReader(f)
-    word = 'javascript'
+    word = 'Java'
+    bad_word = 'JavaScript'
     count = 0
     for row in data:
-        exists = bool(re.search(rf"\b{re.escape(word)}\b", row['title'], re.I))
-        if exists:
+        exists = bool(re.search(rf"\b{re.escape(word)}\b", row['title']))
+        bad_exists = bool(re.search(rf"\b{re.escape(bad_word)}\b", row['title']))
+        if exists and not bad_exists:
             count += 1
     print(count)
