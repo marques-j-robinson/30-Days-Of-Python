@@ -72,4 +72,24 @@ for line in lines:
             incoming_email_addresses.append(match.group(1))
 
 unique_email_addresses = list(set(incoming_email_addresses))
-print(unique_email_addresses)
+# print(unique_email_addresses)
+
+def find_most_common_words(input, qty):
+    try:
+        with open(f"../data/{input}", 'r', encoding="utf-8") as f:
+            data = f.read()
+            f.close()
+    except FileNotFoundError:
+        data = input
+    
+    res = []
+
+    for word in re.split(' ', data):
+        if (not any(len(t) > 1 and t[1] == word for t in res)):
+            count = len(re.findall(rf"\b{word}\b", data))
+            res.append((count, word))
+
+    res = sorted(res, key=lambda x: (x[0], x[1]), reverse=True)
+    return res[:qty]
+
+print(find_most_common_words('sample.txt', 10))
